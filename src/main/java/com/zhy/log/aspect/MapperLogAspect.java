@@ -1,4 +1,4 @@
-package com.efunds.log.aspect;
+package com.zhy.log.aspect;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -7,11 +7,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Aspect
-public class ServiceLogAspect {
+public class MapperLogAspect {
 
-    private final static Logger logger = LoggerFactory.getLogger(ServiceLogAspect.class);
+    private final static Logger logger = LoggerFactory.getLogger(MapperLogAspect.class);
 
-    @Pointcut("@annotation(com.efunds.log.annotations.ServiceLog)")
+    @Pointcut("@annotation(com.zhy.log.annotations.MapperLog)")
     public void pointcut() {
     }
 
@@ -37,7 +37,7 @@ public class ServiceLogAspect {
      */
     @Around("pointcut()")
     public Object doAround(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-       return null;
+        return null;
     }
 
 

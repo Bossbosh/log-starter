@@ -1,6 +1,6 @@
-package com.efunds.log.aspect;
+package com.zhy.log.aspect;
 
-import com.efunds.log.util.DataUtil;
+import com.zhy.log.util.DataUtil;
 import com.google.gson.Gson;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -17,7 +17,7 @@ public class RequestLogAspect {
 
     private final static Logger logger = LoggerFactory.getLogger(RequestLogAspect.class);
 
-    @Pointcut("@annotation(com.efunds.log.annotations.RequestLog)")
+    @Pointcut("@annotation(com.zhy.log.annotations.RequestLog)")
     public void pointcut() {
     }
 

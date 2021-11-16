@@ -1,4 +1,4 @@
-package com.efunds.log.property;
+package com.zhy.log.property;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

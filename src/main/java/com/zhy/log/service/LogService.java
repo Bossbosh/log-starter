@@ -1,9 +1,9 @@
-package com.efunds.log.service;
+package com.zhy.log.service;
 
-import com.efunds.log.appender.EsAppender;
-import com.efunds.log.property.LogConfig;
-import com.efunds.log.property.LogEsConfig;
-import com.efunds.log.property.LogFileConfig;
+import com.zhy.log.appender.EsAppender;
+import com.zhy.log.property.LogConfig;
+import com.zhy.log.property.LogEsConfig;
+import com.zhy.log.property.LogFileConfig;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.*;

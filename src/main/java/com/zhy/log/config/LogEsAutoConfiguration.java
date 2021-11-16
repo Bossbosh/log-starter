@@ -1,6 +1,6 @@
-package com.efunds.log.config;
+package com.zhy.log.config;
 
-import com.efunds.log.property.LogEsConfig;
+import com.zhy.log.property.LogEsConfig;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

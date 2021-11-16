@@ -1,4 +1,4 @@
-package com.efunds.log.util;
+package com.zhy.log.util;
 
 import java.util.UUID;
 

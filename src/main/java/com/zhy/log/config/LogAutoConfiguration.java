@@ -1,10 +1,10 @@
-package com.efunds.log.config;
+package com.zhy.log.config;
 
-import com.efunds.log.aspect.MapperLogAspect;
-import com.efunds.log.aspect.RequestLogAspect;
-import com.efunds.log.aspect.ServiceLogAspect;
-import com.efunds.log.property.LogConfig;
-import com.efunds.log.service.LogService;
+import com.zhy.log.aspect.MapperLogAspect;
+import com.zhy.log.aspect.RequestLogAspect;
+import com.zhy.log.aspect.ServiceLogAspect;
+import com.zhy.log.property.LogConfig;
+import com.zhy.log.service.LogService;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;

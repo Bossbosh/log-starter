@@ -1,6 +1,6 @@
-package com.efunds.log.config;
+package com.zhy.log.config;
 
-import com.efunds.log.property.LogFileConfig;
+import com.zhy.log.property.LogFileConfig;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

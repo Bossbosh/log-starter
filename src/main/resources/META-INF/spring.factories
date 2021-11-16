@@ -1,1 +1,1 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.efunds.log.config.LogAutoConfiguration,com.efunds.log.config.LogEsAutoConfiguration,com.efunds.log.config.LogFileAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.zhy.log.config.LogAutoConfiguration,com.zhy.log.config.LogEsAutoConfiguration,com.zhy.log.config.LogFileAutoConfiguration

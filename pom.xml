@@ -9,7 +9,7 @@
         <version>2.3.0.RELEASE</version>
         <relativePath/>
     </parent>
-    <groupId>com.efunds</groupId>
+    <groupId>com.zhy</groupId>
     <artifactId>log-starter</artifactId>
     <name>log-starter</name>
     <version>1.2.24-SNAPSHOT</version>

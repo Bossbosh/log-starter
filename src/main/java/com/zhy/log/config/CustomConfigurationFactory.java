@@ -1,4 +1,4 @@
-package com.efunds.log.config;
+package com.zhy.log.config;
 
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.core.Filter;
