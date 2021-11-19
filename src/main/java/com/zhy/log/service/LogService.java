@@ -9,8 +9,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.*;
 import org.apache.logging.log4j.core.appender.ConsoleAppender;
 import org.apache.logging.log4j.core.appender.FileAppender;
+import org.apache.logging.log4j.core.config.AppenderRef;
 import org.apache.logging.log4j.core.config.Configuration;
 
+import org.apache.logging.log4j.core.config.LoggerConfig;
 import org.apache.logging.log4j.core.layout.PatternLayout;
 import org.elasticsearch.client.RestHighLevelClient;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,7 +51,7 @@ public class LogService {
         if(logFileConfig != null){
             Appender fileAppender = FileAppender.newBuilder().setName("file-appender")
                     .withFileName(logFileConfig.getPath())
-                    .withBufferedIo(false)
+                    .withBufferedIo(true)
                     .withBufferSize(Integer.parseInt(logFileConfig.getSize()))
                     .setLayout(layout)
                     .build();
@@ -63,16 +65,13 @@ public class LogService {
             config.addAppender(esAppender);
             config.getLoggerConfig("ROOT").addAppender(esAppender,Level.INFO,null);
         }
-        ctx.updateLoggers();
+//        ctx.updateLoggers();
 
-
-
-//      AppenderRef ref = AppenderRef.createAppenderRef("Console",  Level.INFO, null);
-//      AppenderRef[] refs = new AppenderRef[] {ref};
-//      LoggerConfig loggerConfig = LoggerConfig.createLogger(false, Level.INFO, "org.apache.logging.log4j", "true", refs, null, config, null );
-//      loggerConfig.addAppender(appender, null, null);
-//      config.addLogger("org.apache.logging.log4j", loggerConfig);
-
+      AppenderRef ref = AppenderRef.createAppenderRef("Console",  Level.INFO, null);
+      AppenderRef[] refs = new AppenderRef[] {ref};
+      LoggerConfig loggerConfig = LoggerConfig.createLogger(false, Level.ERROR, "org.apache.logging.log4j", "true", refs, null, config, null );
+      config.addLogger("org.springframework.data.convert.CustomConversions", loggerConfig);
+      ctx.updateLoggers();
     }
 
 

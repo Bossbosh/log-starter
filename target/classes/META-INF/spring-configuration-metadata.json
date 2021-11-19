@@ -2,50 +2,50 @@
   "groups": [
     {
       "name": "log.config",
-      "type": "com.efunds.log.property.LogConfig",
-      "sourceType": "com.efunds.log.property.LogConfig"
+      "type": "com.zhy.log.property.LogConfig",
+      "sourceType": "com.zhy.log.property.LogConfig"
     },
     {
       "name": "log.es",
-      "type": "com.efunds.log.property.LogEsConfig",
-      "sourceType": "com.efunds.log.property.LogEsConfig"
+      "type": "com.zhy.log.property.LogEsConfig",
+      "sourceType": "com.zhy.log.property.LogEsConfig"
     },
     {
       "name": "log.file",
-      "type": "com.efunds.log.property.LogFileConfig",
-      "sourceType": "com.efunds.log.property.LogFileConfig"
+      "type": "com.zhy.log.property.LogFileConfig",
+      "sourceType": "com.zhy.log.property.LogFileConfig"
     }
   ],
   "properties": [
     {
       "name": "log.config.location-types",
       "type": "java.util.Set<java.lang.String>",
-      "sourceType": "com.efunds.log.property.LogConfig"
+      "sourceType": "com.zhy.log.property.LogConfig"
     },
     {
       "name": "log.config.pattern",
       "type": "java.lang.String",
-      "sourceType": "com.efunds.log.property.LogConfig"
+      "sourceType": "com.zhy.log.property.LogConfig"
     },
     {
       "name": "log.es.host",
       "type": "java.lang.String",
-      "sourceType": "com.efunds.log.property.LogEsConfig"
+      "sourceType": "com.zhy.log.property.LogEsConfig"
     },
     {
       "name": "log.es.port",
       "type": "java.lang.String",
-      "sourceType": "com.efunds.log.property.LogEsConfig"
+      "sourceType": "com.zhy.log.property.LogEsConfig"
     },
     {
       "name": "log.file.path",
       "type": "java.lang.String",
-      "sourceType": "com.efunds.log.property.LogFileConfig"
+      "sourceType": "com.zhy.log.property.LogFileConfig"
     },
     {
       "name": "log.file.size",
       "type": "java.lang.String",
-      "sourceType": "com.efunds.log.property.LogFileConfig"
+      "sourceType": "com.zhy.log.property.LogFileConfig"
     }
   ],
   "hints": []
